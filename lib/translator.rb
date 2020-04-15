@@ -8,7 +8,7 @@ def load_library(file_path)
   emoticons.each do |key, value| 
   hash[key] = {}
   hash[key][:english] = value[0]
-  hash[key][:japanese] = value[1]
+  hash[key][:Japanese] = value[1]
  end
  
  hash
@@ -25,7 +25,7 @@ end
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
   emoticon = library.keys.find do |key|
-    library[key][:japanese] == emoticon
+    library[key][:Japanese] == emoticon
   end
   emoticon ? emoticon : "Sorry, that emoticon was not found"
 end
