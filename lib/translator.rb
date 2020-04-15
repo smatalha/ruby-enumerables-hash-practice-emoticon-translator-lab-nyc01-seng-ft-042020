@@ -9,8 +9,9 @@ def load_library(file_path)
   hash[key] = {}
   hash[key][:english] = value[0]
   hash[key][:japanese] = value[1]
-  hash
  end
+ 
+ hash
 end
 
 def get_japanese_emoticon(file_path, emoticons)
