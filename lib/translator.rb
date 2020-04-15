@@ -14,12 +14,12 @@ def load_library(file_path)
  hash
 end
 
-def get_japanese_emoticon(file_path, emoticons)
+def get_japanese_emoticon(file_path, emoticon)
   library = load_library("./lib/emoticons.yml")
-  
+  emoticon =
   
 end
 
-def get_english_meaning(file_path, emoticons)
+def get_english_meaning(file_path, emoticon)
   library = load_library("./lib/emoticons.yml")
 end
