@@ -15,7 +15,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  library = load_library("./lib/emoticons.yml")
+  library = load_library(file_path)
   
   emoticon = library.keys.find do |key|
     library[key][:english] == emoticon
@@ -24,7 +24,7 @@ def get_japanese_emoticon(file_path, emoticon)
 end
 
 def get_english_meaning(file_path, emoticon)
-  library = load_library("./lib/emoticons.yml")
+  library = load_library(file_path)
   emoticon = library.keys.find do |key|
     library[key][:japanese] == emoticon
   end
